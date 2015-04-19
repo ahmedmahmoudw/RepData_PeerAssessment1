@@ -31,7 +31,7 @@ stepsByDay <- tapply(activityData$steps, activityData$date, sum, na.rm=TRUE)
 qplot(stepsByDay, xlab='Total steps per day', ylab='Frequency using binwith 500', binwidth=500)
 ```
 
-![plot of total-steps-nonimputed](figure/total-steps-nonimputed.png) 
+![plot of Total steps Non-imputed](figure/total-steps-nonimputed.png) 
 
 ##### 2. Calculate and report the mean and median total number of steps taken per day
 
@@ -97,7 +97,7 @@ stepsByDayImputed <- tapply(activityDataImputed$steps, activityDataImputed$date,
 qplot(stepsByDayImputed, xlab='Total steps per day (Imputed)', ylab='Frequency using binwith 500', binwidth=500)
 ```
 
-![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12.png) 
+![plot of Total steps imputed](figure/total-steps-imputed.png) 
 
 ##### ... and Calculate and report the mean and median total number of steps taken per day. 
 
@@ -131,4 +131,4 @@ ggplot(averagedActivityDataImputed, aes(interval, steps)) +
     ylab("avarage number of steps")
 ```
 
-![plot of chunk unnamed-chunk-15](figure/unnamed-chunk-15.png) 
+![plot of Average steps weekday and weekend](figure/Avg-steps-week+end.png) 
